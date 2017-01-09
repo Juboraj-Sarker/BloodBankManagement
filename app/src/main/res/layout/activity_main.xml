@@ -66,7 +66,7 @@
                 android:inputType="textPassword"
                 android:maxLength="25"
                 android:maxLines="1"
-                android:padding="10dp" />
+                android:padding="10dp"/>
 
         </LinearLayout>
 
