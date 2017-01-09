@@ -23,22 +23,23 @@
             android:orientation="horizontal">
 
             <TextView
-                android:padding="10dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textAlignment="center"
-                android:background="#E91E63"
+                android:background="#F44336"
                 android:text="Donner Registration Form"
                 android:textColor="#fff"
+                android:padding="10dp"
                 android:textStyle="bold"
+                android:layout_marginBottom="10dp"
                 android:textSize="25sp" />
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
+
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Full Name:"
+                android:padding="5dp"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="15sp" />
 
@@ -56,14 +58,14 @@
                 android:id="@+id/fullNameGetFromRegister"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
+                android:layout_weight="2"
                 android:padding="5dp"
                 android:hint="Enter your full name" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
+
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Email:"
+                android:padding="5dp"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="15sp" />
 
@@ -81,7 +84,7 @@
                 android:id="@+id/emailValueGetFromRegister"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
+                android:layout_weight="2"
                 android:inputType="textEmailAddress"
                 android:padding="5dp"
                 android:hint="Enter a valid email" />
@@ -90,7 +93,6 @@
 
 
         <LinearLayout
-            android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,6 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Phone:"
+                android:padding="5dp"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="15sp" />
 
@@ -108,7 +111,7 @@
                 android:id="@+id/phoneNumberGetFromRegister"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
+                android:layout_weight="2"
                 android:inputType="phone"
                 android:padding="5dp"
                 android:hint="Enter your phone number" />
@@ -116,7 +119,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -127,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Passward:"
+                android:padding="5dp"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="15sp" />
 
@@ -134,7 +137,7 @@
                 android:id="@+id/passwardGetFromRegister"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
+                android:layout_weight="2"
                 android:padding="5dp"
                 android:hint="Choose a passward"
                 android:inputType="textPassword" />
@@ -142,7 +145,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -152,6 +154,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:padding="5dp"
                 android:text="Re-type passward:"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="12sp" />
@@ -160,7 +163,7 @@
                 android:id="@+id/passwardGetConfirmFromRegister"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
+                android:layout_weight="2"
                 android:padding="5dp"
                 android:hint="Re-Type your passward"
                 android:inputType="textPassword" />
@@ -169,7 +172,6 @@
 
 
         <LinearLayout
-            android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -188,18 +190,16 @@
                 android:id="@+id/locationGetFromRegister"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
+                android:layout_weight="2"
                 android:padding="5dp"
                 android:hint="Enter your location" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
             <TextView
@@ -215,13 +215,23 @@
                 android:id="@+id/bloodGroupGetFromSpinner"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:padding="5dp"
                 android:drawSelectorOnTop="true"
                 android:entries="@array/spinnerItems">
-
-
             </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
 
         </LinearLayout>
 

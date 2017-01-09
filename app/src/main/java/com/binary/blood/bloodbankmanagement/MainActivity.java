@@ -11,12 +11,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     public void signUp(View view) {
 
         Intent intent = new Intent(MainActivity.this, RegestrationActivity.class);
         startActivity(intent);
+
 
 
     }
