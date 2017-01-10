@@ -27,12 +27,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAlignment="center"
-                android:background="#E91E63"
+                android:background="#03A9F4"
                 android:text="Donner Registration Form"
-                android:textColor="#fff"
-                android:textStyle="bold"
-                android:textSize="25sp" />
+                android:textColor="#000"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
@@ -228,19 +226,17 @@
 
         <LinearLayout
             android:layout_weight="1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/registerBtn"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#4CAF50"
-                android:gravity="center"
                 android:text="Register"
-                android:textAllCaps="false"
                 android:textColor="@color/myCustomTextColorWhite" />
 
 
