@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context="com.binary.blood.bloodbankmanagement.RegestrationActivity">
+    tools:context="com.binary.blood.bloodbankmanagement.application.activitydomain.RegestrationActivity">
 
 
     <LinearLayout
@@ -17,30 +17,30 @@
         android:gravity="center"
         android:orientation="vertical">
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
-                android:padding="10dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#03A9F4"
+                android:background="#F44336"
+                android:padding="10dp"
                 android:text="Donner Registration Form"
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:textSize="20sp" />
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -51,21 +51,21 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/fullNameGetFromRegister"
+                android:id="@+id/memberNameET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.5"
-                android:padding="5dp"
-                android:hint="Enter your full name" />
+                android:hint="Enter your full name"
+                android:padding="5dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -76,23 +76,23 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/emailValueGetFromRegister"
+                android:id="@+id/memberEmailET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.5"
+                android:hint="Enter a valid email"
                 android:inputType="textEmailAddress"
-                android:padding="5dp"
-                android:hint="Enter a valid email" />
+                android:padding="5dp" />
 
         </LinearLayout>
 
 
         <LinearLayout
-            android:padding="10dp"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -103,22 +103,22 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/phoneNumberGetFromRegister"
+                android:id="@+id/memberPhoneET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.5"
+                android:hint="Enter your phone number"
                 android:inputType="phone"
-                android:padding="5dp"
-                android:hint="Enter your phone number" />
+                android:padding="5dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -129,94 +129,94 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/passwardGetFromRegister"
+                android:id="@+id/memberPassET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.5"
-                android:padding="5dp"
                 android:hint="Choose a passward"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:padding="5dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Re-type passward:"
+                android:text="@string/re_type_passward"
                 android:textColor="@color/myCustomTextColorBlack"
-                android:textSize="12sp" />
+                android:textSize="@dimen/smallFont" />
 
             <EditText
-                android:id="@+id/passwardGetConfirmFromRegister"
+                android:id="@+id/memberPassETConfirm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.5"
-                android:padding="5dp"
-                android:hint="Re-Type your passward"
-                android:inputType="textPassword" />
+                android:hint="@string/re_type_your_passward"
+                android:inputType="textPassword"
+                android:padding="5dp" />
 
         </LinearLayout>
 
 
         <LinearLayout
-            android:padding="10dp"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallPadding">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Location:"
-                android:padding="5dp"
+                android:padding="@dimen/lightSmallPadding"
+                android:text="@string/location"
                 android:textColor="@color/myCustomTextColorBlack"
-                android:textSize="15sp" />
+                android:textSize="@dimen/mediumTextSize" />
 
             <EditText
-                android:id="@+id/locationGetFromRegister"
+                android:id="@+id/memberLocationET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.5"
-                android:padding="5dp"
-                android:hint="Enter your location" />
+                android:hint="@string/enter_your_location"
+                android:padding="@dimen/lightSmallPadding" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:padding="10dp"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal">
+            android:layout_marginTop="@dimen/marginTopMedium"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallPadding">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="5dp"
+                android:padding="@dimen/lightSmallPadding"
                 android:text="Choose your blood group:"
                 android:textColor="@color/myCustomTextColorBlack"
-                android:textSize="15sp" />
+                android:textSize="@dimen/mediumTextSize" />
 
             <Spinner
-                android:id="@+id/bloodGroupGetFromSpinner"
+                android:id="@+id/memberBGSpinner"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="5dp"
                 android:drawSelectorOnTop="true"
-                android:entries="@array/spinnerItems">
+                android:entries="@array/spinnerItems"
+                android:padding="@dimen/lightSmallPadding">
 
 
             </Spinner>
@@ -225,18 +225,19 @@
 
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/registerBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#4CAF50"
-                android:text="Register"
+                android:background="@color/colorPrimaryBtn"
+                android:onClick="save"
+                android:text="@string/register"
                 android:textColor="@color/myCustomTextColorWhite" />
 
 

@@ -5,4 +5,5 @@
     <color name="myCustomTextColorWhite">#ffffff</color>
     <color name="myCustomTextColorBlack">#000000</color>
     <color name="colorAccent">#0097a7</color>
+    <color name="colorPrimaryBtn">#4CAF50</color>
 </resources>

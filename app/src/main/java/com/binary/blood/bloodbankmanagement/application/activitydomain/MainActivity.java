@@ -1,9 +1,11 @@
-package com.binary.blood.bloodbankmanagement;
+package com.binary.blood.bloodbankmanagement.application.activitydomain;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.binary.blood.bloodbankmanagement.R;
 
 public class MainActivity extends AppCompatActivity {
 

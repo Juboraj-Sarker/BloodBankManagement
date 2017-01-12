@@ -4,9 +4,9 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/giveblood1"
-    tools:context="com.binary.blood.bloodbankmanagement.LoginActivity">
+    android:orientation="vertical"
+    tools:context="com.binary.blood.bloodbankmanagement.application.activitydomain.LoginActivity">
     <LinearLayout
         android:id="@+id/usernameAndPassward"
         android:layout_width="match_parent"
@@ -25,11 +25,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp"
-                android:textSize="20sp"
-                android:text="Login"
                 android:background="#03A9F4"
-                android:textColor="#000" />
+                android:padding="10dp"
+                android:text="@string/login"
+                android:textColor="#000"
+                android:textSize="20sp" />
 
 
 
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="10dp"
-                android:text="Email:"
+                android:text="@string/email"
                 android:textColor="#000" />
 
             <EditText
@@ -55,7 +55,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="Enter your username"
+                android:hint="@string/enter_your_username"
                 android:padding="10dp" />
 
         </LinearLayout>
@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="10dp"
-                android:text="Passward:"
+                android:text="@string/passward"
                 android:textColor="#000" />
 
             <EditText
@@ -80,7 +80,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="Enter your passward"
+                android:hint="@string/enter_your_passward"
                 android:inputType="textPassword"
                 android:maxLength="25"
                 android:maxLines="1"
@@ -90,20 +90,20 @@
 
 
         <LinearLayout
-            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/loginBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:background="#43A047"
-                android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Login"
+                android:text="@string/login"
                 android:textAllCaps="false"
                 android:textColor="@color/myCustomTextColorWhite" />
 
@@ -127,24 +127,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginTop="10dp"
-            android:background="#43A047"
-            android:text="Find Blood"
-            android:textAllCaps="false"
-            android:layout_weight="1"
             android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#43A047"
+            android:text="@string/find_blood"
+            android:textAllCaps="false"
             android:textColor="@color/myCustomTextColorWhite" />
         <Button
             android:id="@+id/doneteBloodBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginTop="10dp"
-            android:background="#D32F2F"
-            android:text="Donate Blood"
-            android:textAllCaps="false"
             android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:background="#D32F2F"
+            android:text="@string/donate_blood"
+            android:textAllCaps="false"
             android:textColor="@color/myCustomTextColorWhite" />
 
 

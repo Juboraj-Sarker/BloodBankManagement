@@ -4,9 +4,9 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/giveblood1"
-    tools:context="com.binary.blood.bloodbankmanagement.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.binary.blood.bloodbankmanagement.application.activitydomain.MainActivity">
 
 
 </LinearLayout>

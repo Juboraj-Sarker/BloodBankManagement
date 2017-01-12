@@ -1,9 +1,11 @@
-package com.binary.blood.bloodbankmanagement;
+package com.binary.blood.bloodbankmanagement.application.activitydomain;
 
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
+
+import com.binary.blood.bloodbankmanagement.R;
 
 public class LoginActivity extends AppCompatActivity {
     private LinearLayout activity_login;

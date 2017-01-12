@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context="com.binary.blood.bloodbankmanagement.RegestrationActivity">
+    tools:context="com.binary.blood.bloodbankmanagement.application.activitydomain.RegestrationActivity">
 
 
     <LinearLayout
@@ -17,40 +17,40 @@
         android:gravity="center"
         android:orientation="vertical">
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textAlignment="center"
-                android:background="#F44336"
-                android:text="Donner Registration Form"
-                android:textColor="#fff"
-                android:padding="10dp"
-                android:textStyle="bold"
                 android:layout_marginBottom="10dp"
-                android:textSize="25sp" />
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:padding="10dp"
+                android:text="Donner Registration Form"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
 
         <LinearLayout
 
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Full Name:"
                 android:padding="5dp"
+                android:text="Full Name:"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="15sp" />
 
@@ -59,24 +59,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:padding="5dp"
-                android:hint="Enter your full name" />
+                android:hint="Enter your full name"
+                android:padding="5dp" />
 
         </LinearLayout>
 
         <LinearLayout
 
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Email:"
                 android:padding="5dp"
+                android:text="Email:"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="15sp" />
 
@@ -85,25 +85,25 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:hint="Enter a valid email"
                 android:inputType="textEmailAddress"
-                android:padding="5dp"
-                android:hint="Enter a valid email" />
+                android:padding="5dp" />
 
         </LinearLayout>
 
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Phone:"
                 android:padding="5dp"
+                android:text="Phone:"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="15sp" />
 
@@ -112,24 +112,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:hint="Enter your phone number"
                 android:inputType="phone"
-                android:padding="5dp"
-                android:hint="Enter your phone number" />
+                android:padding="5dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Passward:"
                 android:padding="5dp"
+                android:text="Passward:"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="15sp" />
 
@@ -138,16 +138,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:padding="5dp"
                 android:hint="Choose a passward"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:padding="5dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
@@ -164,25 +164,25 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:padding="5dp"
                 android:hint="Re-Type your passward"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:padding="5dp" />
 
         </LinearLayout>
 
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Location:"
                 android:padding="5dp"
+                android:text="Location:"
                 android:textColor="@color/myCustomTextColorBlack"
                 android:textSize="15sp" />
 
@@ -191,15 +191,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:padding="5dp"
-                android:hint="Enter your location" />
+                android:hint="Enter your location"
+                android:padding="5dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
@@ -216,19 +216,19 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:padding="5dp"
                 android:drawSelectorOnTop="true"
-                android:entries="@array/spinnerItems">
+                android:entries="@array/spinnerItems"
+                android:padding="5dp">
             </Spinner>
 
         </LinearLayout>
 
         <LinearLayout
 
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
 
@@ -237,10 +237,10 @@
 
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <Button

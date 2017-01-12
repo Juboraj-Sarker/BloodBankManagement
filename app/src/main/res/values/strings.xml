@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">"Blood Bank Management "</string>
+    <string name="re_type_passward">Re-type passward:</string>
+    <string name="re_type_your_passward">Re-Type your passward</string>
+    <string name="location">Location:</string>
+    <string name="enter_your_location">Enter your location</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="email">Email:</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="passward">Passward:</string>
+    <string name="enter_your_passward">Enter your passward</string>
+    <string name="donate_blood">Donate Blood</string>
+    <string name="find_blood">Find Blood</string>
 
     <string-array name="spinnerItems">
 
