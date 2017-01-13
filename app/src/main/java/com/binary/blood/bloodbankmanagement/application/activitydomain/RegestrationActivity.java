@@ -11,6 +11,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.binary.blood.bloodbankmanagement.R;
+import com.binary.blood.bloodbankmanagement.application.Config;
 import com.binary.blood.bloodbankmanagement.application.controller.RegisterManager;
 import com.binary.blood.bloodbankmanagement.application.model.RegisterModel;
 
@@ -24,6 +25,7 @@ public class RegestrationActivity extends AppCompatActivity {
     private EditText memberPassConfirm;
     private EditText memberLocation;
     private Spinner memberBGSpinner;
+
 
 
     @Override
@@ -71,8 +73,18 @@ public class RegestrationActivity extends AppCompatActivity {
         RegisterModel registerModel = new RegisterModel(name, email, phone, pass, location, bg);
         if(name.isEmpty() || email.isEmpty() || phone.isEmpty() || pass.isEmpty() || location.isEmpty() || bg.isEmpty() ){
             Toast.makeText(this, "Field must be filled", Toast.LENGTH_SHORT).show();
-        }else if(pass.equals(confirmPass)){
+            return;
+        } else if (!email.matches(Config.getEmailPattern()) && !email.isEmpty()) {
+            memberEmail.setText(email);
+            Toast.makeText(this, "Invalid Email Address, Please Input again", Toast.LENGTH_SHORT).show();
+            return;
+        } else if (!pass.equals(confirmPass)) {
             Toast.makeText(this, "Password Not Matched.", Toast.LENGTH_SHORT).show();
+            return;
+        } else if (!phone.matches(Config.getPhonePattern()) && !phone.isEmpty()) {
+            memberPhone.setText(phone);
+            Toast.makeText(this, "Invalid phone number, Please Input correct", Toast.LENGTH_SHORT).show();
+            return;
         }else {
             long insertResultRow = registerManager.addMember(registerModel);
             if (insertResultRow > 0) {
