@@ -21,8 +21,10 @@ public class RegestrationActivity extends AppCompatActivity {
     private EditText memberEmail;
     private EditText memberPhone;
     private EditText memberPass;
+    private EditText memberPassConfirm;
     private EditText memberLocation;
     private Spinner memberBGSpinner;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class RegestrationActivity extends AppCompatActivity {
         memberEmail = (EditText) findViewById(R.id.memberEmailET);
         memberPhone = (EditText) findViewById(R.id.memberPhoneET);
         memberPass = (EditText) findViewById(R.id.memberPassET);
+        memberPassConfirm = (EditText) findViewById(R.id.memberPassETConfirm);
         memberLocation = (EditText) findViewById(R.id.memberLocationET);
         memberBGSpinner = (Spinner) findViewById(R.id.memberBGSpinner);
         registerManager = new RegisterManager(this);
@@ -56,21 +59,28 @@ public class RegestrationActivity extends AppCompatActivity {
     }
 
     public void save(View view) {
-        String name = memberName.getText().toString();
-        String email = memberEmail.getText().toString();
-        String phone = memberPhone.getText().toString();
-        String pass = memberPass.getText().toString();
+        String name     = memberName.getText().toString();
+        String email    = memberEmail.getText().toString();
+        String phone    = memberPhone.getText().toString();
+        String pass     = memberPass.getText().toString();
+        String confirmPass = memberPassConfirm.getText().toString();
         String location = memberLocation.getText().toString();
-        String bg = memberBGSpinner.getSelectedItem().toString();
+        String bg       = memberBGSpinner.getSelectedItem().toString();
+
 
         RegisterModel registerModel = new RegisterModel(name, email, phone, pass, location, bg);
+        if(name.isEmpty() || email.isEmpty() || phone.isEmpty() || pass.isEmpty() || location.isEmpty() || bg.isEmpty() ){
+            Toast.makeText(this, "Field must be filled", Toast.LENGTH_SHORT).show();
+        }else if(pass.equals(confirmPass)){
+            Toast.makeText(this, "Password Not Matched.", Toast.LENGTH_SHORT).show();
+        }else {
+            long insertResultRow = registerManager.addMember(registerModel);
+            if (insertResultRow > 0) {
+                Intent intent = new Intent(RegestrationActivity.this, LoginActivity.class);
+                startActivity(intent);
+                Toast.makeText(this, "Thanks You are successfully Registered" + insertResultRow, Toast.LENGTH_SHORT).show();
 
-        long insertResultRow = registerManager.addMember(registerModel);
-        if (insertResultRow > 0) {
-            Intent intent = new Intent(RegestrationActivity.this, LoginActivity.class);
-            startActivity(intent);
-            Toast.makeText(this, registerModel.getMemberName() + " >> " + insertResultRow, Toast.LENGTH_SHORT).show();
-
+            }
         }
 
     }
