@@ -3,6 +3,8 @@ package com.binary.blood.bloodbankmanagement.application.activitydomain;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -26,6 +28,7 @@ public class RegestrationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regestration);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         memberName = (EditText) findViewById(R.id.memberNameET);
         memberEmail = (EditText) findViewById(R.id.memberEmailET);
@@ -34,6 +37,22 @@ public class RegestrationActivity extends AppCompatActivity {
         memberLocation = (EditText) findViewById(R.id.memberLocationET);
         memberBGSpinner = (Spinner) findViewById(R.id.memberBGSpinner);
         registerManager = new RegisterManager(this);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 
     public void save(View view) {
