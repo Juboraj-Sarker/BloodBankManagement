@@ -17,9 +17,9 @@
         </activity>
         <activity
             android:name=".application.activitydomain.RegestrationActivity"
-            android:label="Donate to save life">
-        </activity>
-        <activity android:name=".application.activitydomain.LoginActivity"></activity>
+            android:label="Donate to save life"></activity>
+        <activity android:name=".application.activitydomain.LoginActivity" />
+        <activity android:name=".application.activitydomain.BloodDonationRules"></activity>
     </application>
 
 </manifest>

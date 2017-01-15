@@ -1,12 +1,12 @@
 package com.binary.blood.bloodbankmanagement.application.schema;
 
+
 /**
  * Created by Shaheb Ali on 1/13/2017.
  * Schema - RegisterTable
  */
 
 public class RegisterTable {
-
 
     private static final String REG_TABLE_NAME = " member_register ";
     private static final String REG_COLM_MEM_ID = " memId ";
@@ -67,4 +67,6 @@ public class RegisterTable {
     public static String getRegColmMemLocation() {
         return REG_COLM_MEM_LOCATION;
     }
+
+
 }

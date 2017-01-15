@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_blood_donation_rules"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.binary.blood.bloodbankmanagement.application.activitydomain.BloodDonationRules">
+
+    <TextView
+        android:id="@+id/rulesHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="রক্ত দিন জীবন বাঁচান"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rulesHeading">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesSubHeading"
+            android:text="
+            (নিজের নিরাপত্তা নিশ্চিত করে নিন। কোন রকম অসুবিধা হলে www.DonateBloodBD.com কর্তৃপক্ষ কোনভাবে দায়ী থাকবে না।)
+
+মুমূর্ষু রোগীর জন্য রক্ত সংগ্রহে আমরা সংগ্রাম করে যাচ্ছি প্রতিনিয়ত। জরুরী মুহূর্তে রোগীদের রক্ত ম্যানেজ করে দেয়া আমাদের দায়িত্ব, তেমনি একজন রক্তদাতার নিরাপত্তা সুনিশ্চিত করাও আমাদের দায়িত্বের অন্তর্ভুক্ত।
+
+রক্তদাতাদের বলছিঃ
+—————————
+
+১) রোগী কোন হাসপাতাল/ক্লিনিকে আছেন জেনে নিন। হাসপাতাল/ক্লিনিক ছাড়া অন্য কোথাও রক্তদান করতে যাবেন না। রোগীর বাসায় হলেও না।
+
+২) হাসপাতাল/ক্লিনিক ছাড়া অন্য কোথাও রক্ত আবেদনকারী (মোবাইল নম্বরে যে ব্যাক্তির সাথে আপনি যোগাযোগ করছেন) এর সাথে দেখা করবেন না। হাসপাতালের পাশের গলি, কিংবা কোনও দোকানে দেখা করতে বললে যাবেন না।
+
+৩) রক্তদানের পূর্বে রোগী দেখে নিবেন। রোগীর রিপোর্ট, ডাক্তারের রিকুইজিশন লেটার দেখে নিবেন।
+
+৪) রক্তদানের সময় দুই-একজন বন্ধু সাথে নিয়ে গেলে ভালো হয়।
+
+৫) রক্তদানে নতুন সূচ ব্যবহার করছে কিনা নিশ্চিত হয়ে নিন...
+
+৬) উপস্থিত বিশেষজ্ঞের দক্ষতা নিয়ে সন্দেহ থাকলে কর্তৃপক্ষকে জানান...
+
+৭) রক্তের ক্রস ম্যাচিং করার পর রক্তদান করবেন, এর আগে নয়... বেশির ভাগ সরকারী হাসপাতালে ক্রস ম্যাচিং না করেই রক্ত রেখে দেয়... এটা কখনই উচিত নয়... নিজে সচেতন হোন... ক্রস ম্যাচিং এর পর রক্তদান করবেন...
+
+
+
+রোগীকে (বা রোগীর আত্মীয়কে) বলছিঃ
+——————————————-———
+১। রক্তদানের পর রক্তদাতা যেন অন্ততপক্ষে আধা ঘণ্টা বিশ্রাম নিতে পারেন তার ব্যবস্থা রাখবেন।
+
+২। রক্তদানের পর যদি সম্ভব হয় ফলমূল, জুস, পানি এর ব্যবস্থা রাখবেন রক্তদাতার জন্য। রক্তদাতার তাড়াতাড়ি Recovery জন্য এটা দরকারি।
+
+৩। সুস্থ হয়ে উঠার পরও রক্তদাতার সাথে যোগাযোগ রাখুন। যার রক্ত আপনার শরীরে প্রবাহিত হচ্ছে, যে নিঃস্বার্থভাবে আপনার জীবন বাঁচাতে এগিয়ে এসেছে – তার সাথে সুসম্পর্ক রাখুন। রক্তদাতার কাছে বার বার কৃতজ্ঞতা প্রকাশ করা – আমার কাছে ভুল কিছু মনে হয় না  :)
+
+রক্ত দিন, জীবন বাঁচান :)"
+            android:textColor="@color/myCustomTextColorBlack" />
+    </ScrollView>
+
+</RelativeLayout>

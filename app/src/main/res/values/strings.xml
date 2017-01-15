@@ -12,6 +12,8 @@
     <string name="enter_your_passward">Enter your passward</string>
     <string name="donate_blood">Donate Blood</string>
     <string name="find_blood">Find Blood</string>
+    <string name="rules_headings">(নিজের নিরাপত্তা নিশ্চিত করে নিন। কোন রকম অসুবিধা হলে www.DonateBloodBD.com কর্তৃপক্ষ কোনভাবে দায়ী থাকবে না।)</string>
+    <string name="rules_subheading">মুমূর্ষু রোগীর জন্য রক্ত সংগ্রহে আমরা সংগ্রাম করে যাচ্ছি প্রতিনিয়ত। জরুরী মুহূর্তে রোগীদের রক্ত ম্যানেজ করে দেয়া আমাদের দায়িত্ব, তেমনি একজন রক্তদাতার নিরাপত্তা সুনিশ্চিত করাও আমাদের দায়িত্বের অন্তর্ভুক্ত।</string>
 
     <string-array name="spinnerItems">
 

@@ -8,7 +8,15 @@
     android:orientation="vertical"
     tools:context="com.binary.blood.bloodbankmanagement.application.activitydomain.MainActivity">
 
-
+    <TextView
+        android:id="@+id/rulesTVBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="রক্ত দিন জীবন বাঁচান"
+        android:textColor="#D32F2F"
+        android:textStyle="bold" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
